@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Safe on the Ιnternet</title>
+    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="customize.css" type="text/css">
+    <script src="scripts/cards.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="game-board">
+
+      <div class="hacker-area">
+
+        <!--<h1>
+          <strong>HACKER CARDS</strong> <br/> Choose the best card to stop the hackers' attack
+        </h1>-->
+
+        <div class="stats hacker-stats">
+          <div class="life-bar">
+            <div class="life-left hacker-color"></div>
+          </div>
+          <div class="life-total"></div>
+          <!-- Change the name and emoji here -->
+		  <img src="images/hacker.png" width="30" height="37">          
+          <div class="name"></div>
+        </div>
+        
+        <div class="card hacker-card hacker-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+      </div>
+
+      <div class="player-area">
+
+        <div class="stats player-stats">
+          <div class="life-bar">
+            <div class="life-left player-color"></div>
+          </div>
+          <div class="life-total"></div>
+          <!-- Change the name and emoji here -->
+		  <img src="images/you.png" width="30" height="37">         
+          <div class="name"></div>
+		  
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <button class="start-game" onClick="startGame()">ΞΕΚΙΝΗΣΤΕ!</button>
+        <button class="next-turn" onClick="playTurn()">Συνέχεια!</button>
+		
+
+    <div class="winner-section">
+      <div>
+        <span class="winner-message">You got hacked!</span>
+        <button class="restart" onClick="restartGame()">Play Again</button>
+      </div>
+    </div>
+
+    <script src="scripts/script.js" type="text/javascript"></script>
+
+  </body>
+</html>
